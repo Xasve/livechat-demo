@@ -1,75 +1,75 @@
-# 💬 App de Mensajería en Vivo
+# 💬 Real-Time Messaging App
 
-Aplicación de chat en tiempo real con interfaz profesional. Construida con HTML, CSS y JavaScript. Simula la experiencia completa de una plataforma de mensajería incluyendo conversaciones, respuestas automáticas, archivos adjuntos e indicadores de estado.
+Live chat application with a professional interface built with HTML, CSS, and JavaScript. Simulates the complete experience of a messaging platform including conversations, automatic replies, file attachments, and status indicators.
 
-## ✨ Funcionalidades
+## Features
 
-- **Lista de contactos** con estado en línea/ausente/desconectado y badges de no leídos
-- **Mensajes en tiempo real** — Envía y recibe respuestas automáticas simuladas
-- **Indicador de escritura** — Animación de puntos mientras el contacto "escribe"
-- **Confirmación de lectura** — Doble check ✓✓ en mensajes enviados
-- **Adjuntar archivos** — Simula el envío de .zip, .pdf, .sql con nombre y tamaño
-- **Compartir imágenes** — Envío de capturas de pantalla
-- **Insertar código** — Botón para insertar bloques de código en el chat
-- **Canales de equipo** — Sección de canales (#general, #proyectos, #diseño)
-- **Panel de información** — Estadísticas del contacto, archivos recientes y miembros online
-- **Búsqueda de contactos** — Filtro en tiempo real en la lista
-- **Diseño responsive** — Panel lateral colapsable en móvil
+- **Contact list** with online/away/offline status and unread message badges
+- **Real-time messages** — Send messages and receive automatic simulated replies
+- **Typing indicator** — Animated dots while the contact is "typing"
+- **Read receipts** — Double check ✓✓ on sent messages
+- **File attachments** — Simulates sending .zip, .pdf, .sql files with name and size
+- **Image sharing** — Screenshot upload simulation
+- **Code snippets** — Button to insert code blocks in the chat
+- **Team channels** — Channel section (#general, #projects, #design)
+- **Info panel** — Contact stats, recent files, and online members
+- **Contact search** — Real-time filter in the contact list
+- **Responsive design** — Collapsible side panels on mobile
 
-## 🧰 Stack Técnico
+## Tech Stack
 
-| Capa | Tecnología |
-|------|-----------|
+| Layer | Technology |
+|-------|-----------|
 | Frontend | HTML5, CSS3, JavaScript ES6+ |
 | Layout | CSS Grid, Flexbox, sticky positioning |
-| Tipografía | Inter + JetBrains Mono |
-| Animaciones | CSS keyframes (typing dots, pulse) |
+| Typography | Inter + JetBrains Mono |
+| Animations | CSS keyframes (typing dots, pulse) |
 
-> **Stack en producción:** JavaScript · Socket.io · Express · MySQL · JWT Auth · Node.js
+> **Production stack:** Node.js · Socket.io · Express · MySQL · JWT Auth
 
-## 🚀 Cómo correr el proyecto
+## Getting Started
 
 ```bash
-# Clonar el repositorio
+# Clone the repository
 git clone https://github.com/Xasve/livechat-demo.git
 
-# Abrir en el navegador (no requiere servidor)
+# Open in browser (no server required)
 open index.html
 ```
 
-O visita el **[Demo en vivo →](https://xasve.github.io/livechat-demo)**
+Or visit the **[Live Demo →](https://xasve.github.io/livechat-demo)**
 
-## 📁 Estructura
+## Project Structure
 
 ```
 livechat-demo/
-└── index.html      # App completa (HTML + CSS + JS)
+└── index.html      # Full app (HTML + CSS + JS)
 ```
 
-## 🗂️ Arquitectura en producción
+## Production Architecture
 
 ```
-Cliente (Browser)
+Browser (Client)
     │
     ├── Socket.io client  ──→  Node.js + Express server
     │                              │
-    │                              ├── Socket.io server (eventos en vivo)
-    │                              ├── REST API (historial, usuarios)
-    │                              └── MySQL (mensajes, salas, usuarios)
+    │                              ├── Socket.io (real-time events)
+    │                              ├── REST API (history, users)
+    │                              └── MySQL (messages, rooms, users)
     │
-    └── JWT Token  ──→  Middleware de autenticación
+    └── JWT Token  ──→  Auth middleware
 ```
 
-## 📸 Lo que verás en el demo
+## What You'll See in the Demo
 
-- Panel izquierdo con 6 contactos y sus estados
-- Chat central con historial de conversación
-- Respuestas automáticas al enviar mensajes
-- Animación de "escribiendo..." antes de cada respuesta
-- Panel derecho con info del contacto y miembros online
+- Left panel with 6 contacts and their online statuses
+- Central chat with conversation history
+- Automatic replies when you send messages
+- "Typing..." animation before each reply
+- Right panel with contact info and online members list
 
-## 👨‍💻 Autor
+## Author
 
-**Ethan Barboza** — Full Stack Developer Freelance
+**Ethan Barboza** — Full Stack Developer · Freelance
 📧 ethan.barboza10@gmail.com
 🌐 [xasve.github.io](https://xasve.github.io)
